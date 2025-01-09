@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px #aaa;
+  background-color: #2e4057;
+}
+
+.logo {
+  margin: 0.5rem 2rem;
+  width: 5rem;
+}
+
+.header > h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 2rem;
+  color: #c1cfd6;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  gap: 2rem;
+  background-color: #2e4057;
+  margin-right: 2rem;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #c1cfd6;
+  font-weight: bold;
+}
+
+nav a[aria-current='page'] {
+  color: #faf6e4;
+}
+
+main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr 2fr 5fr 3fr 2fr;
+}
+
+.store-highlight {
+  grid-row: 1;
+  grid-column: 1/4;
+  background-color: #f7b3cc;
+}
+
+.store-highlight > h3 {
+  margin: 1rem;
+}
+
+.store-highlight > p {
+  max-width: 40rem;
+  margin: 1rem;
+  font-family: Calibri;
+  font-size: 1.1rem;
+}
+
+.shopping-promos {
+  grid-column: 1/4;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #fff7ee;
+}
+
+.promo-card {
+  margin: 0.25rem;
+  background-color: #2e4057;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: #c1cfd6;
+}
+
+.promo-card > h4 {
+  margin-top: 0.5rem;
+}
+
+.promo-card > p {
+  margin: 0 1.2rem;
+}
+
+.product-images {
+  background-color: #fff7ee;
+  grid-column: 1/4;
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 25vh;
+}
+
+.product-images > img {
+  object-fit: fill;
+}
+
+.shopping-perks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/4;
+  background-color: #ee583f;
+  color: #2e4057;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 1.3rem;
+}
+
+.perk-card > p {
+  font-size: 1.1rem;
+  font-family: Calibri;
+  margin-top: 0.25rem;
+}
+
+.perk-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.perk-card {
+  margin: 1rem;
+  width: 20rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff7ee;
+  border: 1px solid #2e4057;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.shopping-categories {
+  padding: 0.75rem;
+  grid-row: 5;
+  grid-column: 1/4;
+  background-color: #f7b3cc;
+}
+
+.shopping-categories > h3 {
+  margin-bottom: 0.25rem;
+  margin-left: 0.25rem;
+  
+}
+
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  max-width: 30rem;
+}
+
+.category-container > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #2e4057;
+  border-radius: 6px;
+  margin: 0.25rem;
+  padding: 0.25rem 0;
+  background-color: #2e4057;
+  color: #c1cfd6;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #2e4057;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top {
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.sign-up-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sign-up-container > form > input {
+  border-radius: 5px;
+  border: none;
+  padding: 0.25rem;
+  min-width: 15rem;
+  margin-right: 0.25rem;
+}
+
+.sign-up-container > form > button {
+  border-radius: 5px;
+  padding: 0.25rem 0.75rem;
+  border: none;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.bottom-navbar {
+  margin-right: 0;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #c1cfd6;
+}
