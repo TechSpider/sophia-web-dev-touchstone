@@ -28,17 +28,18 @@ $('.contact-form').on('submit', () => {
         email: $('#email').val(),
         phone: $('#phone').val(),
         feedback: $('#feedback').val(),
-        customOrder: $('#custom-order').val(),
-    }
+        customOrder: $("#custom-order").is(":checked") ? "true" : "false",
+    };
 
-    localStorage.setItem($('#name'.val()), JSON.stringify(formInfo))
+    localStorage.setItem($('#name').val(), JSON.stringify(formInfo));
 
-    console.log(localStorage.getItem('Rolland'))
-    alert('Thank you for your message.')
+    console.log(localStorage.getItem('Rolland'));
+    alert('Thank you for your message.');
 });
 
 
 function updateCart(itemName, emptyCart = false) {
+sessionStorage.setItem('cart', JSON.stringify([]));
 let cart = JSON.parse(sessionStorage.getItem('cart'));
 $('#cart-list').empty();
 
@@ -50,7 +51,8 @@ if(emptyCart == true) {
     sessionStorage.setItem('cart', JSON.stringify(cart));
 }
 
-cart.forEach(element => {
-    $('#cart-list').append(`<li>${element}</li>`);
-});
-}
+if(cart.length > 0) {
+    cart.forEach(element => {
+        $('#cart-list').append(`<li>${element}</li>`);
+    });
+}}
