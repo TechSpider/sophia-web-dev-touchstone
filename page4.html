@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="script.js" defer></script>
+    <title>Events</title>
   </head>
   <body>
     <header class="header">
@@ -19,14 +20,36 @@
         <a href="/page4.html" aria-current="page">Events</a>
       </nav>
     </header>
-    <main></main>
+    <main class="events-container">
+      <h1>Upcoming Events</h1>
+      <div class="event-cards-container">
+        <div class="event-card"><h4>Reading Club</h4>
+        <h4>12/13/2024</h4>
+        </div>
+        <div class="event-card"><h4>Book Signing</h4>
+        <h4>12/18/2024</h4>
+        </div>
+        <div class="event-card"><h4>Reading Club</h4>
+        <h4>12/23/2024</h4>
+        </div>
+        <div class="event-card"><h4>50% off Fantasy books!</h4>
+        <h4>12/30/2024</h4>
+        </div>
+        <div class="event-card"><h4>Reading Club</h4>
+        <h4>01/05/2025</h4>
+        </div>
+        <div class="event-card"><h4>Reading Club</h4>
+        <h4>01/15/2025</h4>
+        </div>
+      </div>
+    </main>
     <footer>
       <div class="footer-top">
         <div class="sign-up-container">
           <h2>Sign up for our Newsletter!</h2>
           <form action="" class="newsletter-form">
             <input type="email" placeholder="Your email" required />
-            <button>Subscribe</button>
+            <button class="subscribe-button">Subscribe</button>
           </form>
         </div>
       </div>

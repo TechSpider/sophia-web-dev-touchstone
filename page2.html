@@ -1,42 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Other page</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <header class="header">
-      <img class="logo" src="./src/logo.png" alt="logo image" />
-      <h1>Book Haven Bookstore</h1>
-      <nav class="top-navbar">
+
+<head>
+  <title>Gallery</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type="module" src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <img class="logo" src="./src/logo.png" alt="logo image" />
+    <h1>Book Haven Bookstore</h1>
+    <nav class="top-navbar">
+      <a href="/">Home</a>
+      <a href="/page2.html" aria-current="page">Gallery</a>
+      <a href="/page3.html">About Us</a>
+      <a href="/page4.html">Events</a>
+    </nav>
+  </header>
+  <main class="gallery-container">
+    <dialog id="cart-dialog">
+      <div class="dialog-top"><h3>Your Cart</h3><button id="cart-close">X</button></div>
+      <ul id="cart-list"></ul>
+      <div class="cart-buttons"><button id="clear-cart">Clear Cart</button><button id="process-order">Process Order</button></div>
+    </dialog>
+    <div class="gallery-top">
+      <h1>Choose from our numerous options...</h1>
+      <button id="view-cart">View Cart</button>
+    </div>
+    <div class="gallery-main">
+      <div class="gallery-card">
+        <img src="./src/Client3_Book1.png" alt="book image">
+        <h4>Brie Mine 4Ever</h4>
+        <p>This is a really good book about a romance started through a shared love of cheese.</p>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+      <div class="gallery-card">
+        <img src="./src/Client3_Book2.png" alt="book image">
+        <h4>Glory Riders</h4>
+        <p>This is a really good book about a gang of motorcyclists.</p>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+      <div class="gallery-card">
+        <img src="./src/Client3_Book3.png" alt="book image">
+        <h4>Sorcerer's Shadowed Chronicles</h4>
+        <p>This is a really good book about a shadowy Sorcerer.</p>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+      <div class="gallery-card">
+        <img src="./src/Client3_Magazine1.png" alt="book image">
+        <h4>Ball Magazine</h4>
+        <p>This is a really good magazine for any and all sports lovers.</p>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+      <div class="gallery-card">
+        <img src="./src/Client3_Magazine2.png" alt="book image">
+        <h4>Travel Magazine</h4>
+        <p>This is a really good magazine for any and all travel lovers.</p>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+      <div class="gallery-card">
+        <img src="./src/Client3_Magazine3.png" alt="book image">
+        <h4>Eat Magazine</h4>
+        <p>This is a really good magazine for any and all food lovers.</p>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+      <div class="gallery-card">
+        <img src="./src/Client3_Notebook.png" alt="book image">
+        <h4>Notebook</h4>
+        <p>This is a beautiful and useful notebook for any notes you may need to take.</p>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+      <div class="gallery-card">
+        <img src="./src/Client3_Stickers.png" alt="book image">
+        <h4>Stickers</h4>
+        <p>This is a collection of awesome stickers to spice up your belongings.</p>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+      <div class="gallery-card">
+        <img src="./src/Client3_ToteBag.png" alt="book image">
+        <h4>Tote Bag</h4>
+        <p>This is a high quality and stylish tote bag for all your book-carrying needs!</p>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <div class="footer-top">
+      <div class="sign-up-container">
+        <h2>Sign up for our Newsletter!</h2>
+        <form action="" class="newsletter-form">
+          <input type="email" placeholder="Your email" required />
+          <button class="subscribe-button">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <nav class="bottom-navbar">
         <a href="/">Home</a>
-        <a href="/page2.html" aria-current="page">Gallery</a>
+        <a href="/page2.html">Gallery</a>
         <a href="/page3.html">About Us</a>
         <a href="/page4.html">Events</a>
       </nav>
-    </header>
-    <main></main>
-    <footer>
-      <div class="footer-top">
-        <div class="sign-up-container">
-          <h2>Sign up for our Newsletter!</h2>
-          <form action="" class="newsletter-form">
-            <input type="email" placeholder="Your email" required />
-            <button>Subscribe</button>
-          </form>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <nav class="bottom-navbar">
-          <a href="/">Home</a>
-          <a href="/page2.html">Gallery</a>
-          <a href="/page3.html">About Us</a>
-          <a href="/page4.html">Events</a>
-        </nav>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>

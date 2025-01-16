@@ -1,43 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <header class="header">
-      <img class="logo" src="./src/logo.png" alt="logo image" />
-      <h1>Book Haven Bookstore</h1>
-      <nav class="top-navbar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type="module" src="script.js" defer></script>
+  <title>About Us</title>
+</head>
+
+<body>
+  <header class="header">
+    <img class="logo" src="./src/logo.png" alt="logo image" />
+    <h1>Book Haven Bookstore</h1>
+    <nav class="top-navbar">
+      <a href="/">Home</a>
+      <a href="/page2.html">Gallery</a>
+      <a href="/page3.html" aria-current="page">About Us</a>
+      <a href="/page4.html">Events</a>
+    </nav>
+  </header>
+  <main class="about-us-container">
+    <div class="about-paragraph-container">
+      <h1>About Us</h1>
+      <p>Book Haven Bookstore is a local treasure for book enthusiasts, offering a diverse selection of books,
+        magazines, journals, and office supplies. With a deep-rooted commitment to fostering literary exploration and a
+        love for reading, we are embarking on the creation of an online presence that mirrors our dedication to the
+        world of words. Serving a broad audience of book lovers and knowledge seekers, our central goal is to cultivate
+        a
+        vibrant literary community, and simplify the process of book inquiries and purchases.
+        Our target audience comprises avid readers, students, and individuals in search of high-quality reading
+        materials and office essentials. Book Haven Bookstore's practices revolve around celebrating the written
+        word, creating an inviting digital space that encourages literary discovery, and supporting intellectual growth.
+      </p>
+    </div>
+    <div class="business-hours-container">
+      <h1>Business Hours</h1>
+      <table>
+        <tr>
+          <th>Monday - Friday</th>
+          <th>9 a.m. - 8 p.m.</th>
+        </tr>
+        <tr>
+          <th>Saturday</th>
+          <th>10 a.m. - 6 p.m.</th>
+        </tr>
+        <tr>
+          <th>Sunday</th>
+          <th>11 a.m. - 5 p.m.</th>
+        </tr>
+      </table>
+    </div>
+    <div class="contact-form-container">
+      <h1>Contact Us</h1>
+      <form action="" class="contact-form">
+        <div class="form-input">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-input">
+          <label for="email">Email Address:</label>
+          <input type="email" name="email" id="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-input">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" name="phone" id="phone" placeholder="Your Phone Number (Optional)">
+        </div>
+        <div class="form-input">
+          <label for="feedback">Feedback/Order Information:</label>
+          <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Your Feedback/Custom Order Information" required></textarea></div>
+        <div class="form-input-checkbox">
+          <input type="checkbox" name="custom-order" id="custom-order">
+          <label for="custom-order">Custom Order</label>
+        </div>
+        <div class="contact-form-buttons">
+          <input type="submit" id="contact-submit" value="Submit"></input><input type="reset" value="Clear Form" class="reset-form-button">
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-top">
+      <div class="sign-up-container">
+        <h2>Sign up for our Newsletter!</h2>
+        <form action="" class="newsletter-form">
+          <input type="email" placeholder="Your email" required />
+          <button class="subscribe-button">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <nav class="bottom-navbar">
         <a href="/">Home</a>
         <a href="/page2.html">Gallery</a>
-        <a href="/page3.html" aria-current="page">About Us</a>
+        <a href="/page3.html">About Us</a>
         <a href="/page4.html">Events</a>
       </nav>
-    </header>
-    <main></main>
-    <footer>
-      <div class="footer-top">
-        <div class="sign-up-container">
-          <h2>Sign up for our Newsletter!</h2>
-          <form action="" class="newsletter-form">
-            <input type="email" placeholder="Your email" required />
-            <button>Subscribe</button>
-          </form>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <nav class="bottom-navbar">
-          <a href="/">Home</a>
-          <a href="/page2.html">Gallery</a>
-          <a href="/page3.html">About Us</a>
-          <a href="/page4.html">Events</a>
-        </nav>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
