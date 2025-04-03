@@ -1,3 +1,3 @@
 # sophia-web-dev-touchstone
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/TechSpider/sophia-web-dev-touchstone)
+Fictional company webpage for final touchstone project of Sophia.org's Introduction to Web Development course.
